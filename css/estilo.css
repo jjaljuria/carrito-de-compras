@@ -1,0 +1,90 @@
+*{
+	margin: 0;
+	padding:0;
+}
+
+h1{
+	margin-bottom: 0;
+}
+
+
+#registrar{
+	background-image: url('../img/tienda-virtual-1.png'); background-position: center center;
+}
+
+.bien{
+	word-wrap: break-word;
+}
+
+.menu-lateral{
+	min-height: 90vh !important;
+}
+#boton-desplegar{
+	display: none;
+}
+
+#boton-replegar{
+	display: none;
+}
+
+
+#demo{
+	height: 400px;
+	width: 600px;
+}
+embed{
+	height: 32cm;
+}
+@media screen and (max-width: 768px){
+	html{
+		font-size: 13px;
+	}
+
+	body{
+		overflow-x: hidden;
+	}
+
+	#boton-desplegar{
+		display: block;
+	}
+
+	#boton-replegar{
+		display: block;
+	}
+
+	.menu-lateral{
+		transition: 1s;
+		position: fixed;
+		top: 0px;
+		left:0px;
+		width: 100%;
+		height: 100%;
+		transform: translateX(-100%);
+		z-index: 100;
+	}
+
+	.footer-absoluto{
+		position: static;
+	}
+
+	.tabla-responsive{
+		overflow-x: auto;
+		display: block
+	}
+	
+}
+
+@media screen and (min-width: 767px){
+	.menu-lateral{
+	transform: translateX(0%);
+	z-index: 100;
+	position:static;
+	}	
+	#boton-desplegar{
+		display: none;
+	}
+	
+	#boton-replegar{
+		display: none;
+	}
+}
